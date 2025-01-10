@@ -87,6 +87,13 @@ main {
           opacity: .8;
         }
       }
+
+      .wats-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+      }
     }
   }
 }

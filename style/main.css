@@ -84,6 +84,13 @@ main {
 .modal .modal-content .modal-btns button:hover {
   opacity: 0.8;
 }
+.modal .modal-content .modal-btns .wats-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
 
 .modal.active {
   display: flex;
