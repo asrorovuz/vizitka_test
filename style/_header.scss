@@ -1,0 +1,116 @@
+header {
+  width: 100%;
+  background-color: $white;
+  padding: 15px 0;
+
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: $grey;
+      font-family: $font-family;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 150%;
+      transition: 0.3s;
+
+      &:nth-child(2) {
+        margin-right: 50px;
+      }
+
+      span {
+        font-size: 20px;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        color: $zelenyy;
+        span {
+          color: $zelenyy;
+        }
+      }
+    }
+
+    button{
+      cursor: pointer;
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+    }
+  }
+
+  .navbar-bottom {
+    .navbar-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navbar-item {
+        .navbar-link {
+          font-weight: 500;
+          font-family: $font-family;
+          font-size: 14px;
+          line-height: 150%;
+          text-align: center;
+          color: $temnyy-teksty;
+        }
+      }
+    }
+  }
+
+  nav {
+    position: fixed ;
+    padding: 10px 15px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    display: none;
+
+    .navbar-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navbar-item {
+        .navbar-link {
+          font-weight: 400;
+          font-family: $second-family;
+          font-size: 11px;
+          line-height: 150%;
+          text-align: center;
+          color: $temnyy-teksty;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          transition: all .3s ease-in-out;
+
+          &:hover{
+            color: $zelenyy;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    background-color: $grey-900;
+
+    .navbar-bottom {
+      display: none;
+    }
+
+    nav{
+      display: block;
+    }
+  }
+}

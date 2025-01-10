@@ -1,0 +1,32 @@
+.calculator {
+  h1 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: $font-family;
+    color: $temnyy-teksty;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    margin-left: 10px;
+
+    span {
+      display: flex;
+    }
+  }
+
+  .calculator-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+
+    p {
+      font-family: $font-family;
+      font-weight: 500;
+      font-size: 18px;
+      color: $temnyy-teksty;
+    }
+  }
+}

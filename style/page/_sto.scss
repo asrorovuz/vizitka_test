@@ -1,0 +1,54 @@
+.main-sto {
+  padding: 30px 0;
+  min-height: calc(100vh - 90px);
+  background-color: $grey-900;
+
+  .main-sto-title {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 22px;
+    color: $temnyy-teksty;
+    margin-bottom: 30px;
+
+    span {
+      display: flex;
+    }
+  }
+
+  .main-sto-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .main-sto-card {
+      border: 1px solid $grey-900;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: $white;
+      font-weight: 500;
+      font-family: $font-family;
+
+      .main-sto-card-content {
+        display: flex;
+        column-gap: 15px;
+        margin-bottom: 15px;
+
+        h4 {
+          font-size: 18px;
+          line-height: 150%;
+          margin-bottom: 10px;
+        }
+
+        p {
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: $grey;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}

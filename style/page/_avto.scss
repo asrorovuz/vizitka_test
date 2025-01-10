@@ -1,0 +1,294 @@
+.avto {
+  h1 {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: $font-family;
+    color: $temnyy-teksty;
+    margin-bottom: 30px;
+
+    span {
+      display: flex;
+    }
+  }
+
+  .avto-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .avto-card {
+      border: 1px solid $btn-grey;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: $white;
+      font-weight: 500;
+      font-family: $font-family;
+
+      .avto-card-name {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        margin-bottom: 10px;
+
+        h4 {
+          font-size: 18px;
+          color: $temnyy-teksty;
+        }
+
+        p {
+          font-size: 14px;
+          color: $grey;
+        }
+      }
+
+      .info-content {
+        display: flex;
+        column-gap: 40px;
+        margin-bottom: 10px;
+
+        .avto-card-info,
+        .avto-card-info-content {
+          p {
+            line-height: 150%;
+
+            &:nth-of-type(1) {
+              font-size: 12px;
+              color: $grey;
+              margin-bottom: 5px;
+            }
+
+            &:nth-of-type(2) {
+              color: $temnyy-teksty;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .btn-avto {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 14px;
+        color: $temnyy-teksty;
+        border-radius: 5px;
+        background-color: $btn-grey;
+        padding: 10px 0;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $zelenyy;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.single-avto {
+  background-color: $grey-900;
+  min-height: calc(100vh - 90px);
+  padding: 30px 0;
+  display: none;
+
+  .single-avto-head {
+    margin-bottom: 30px;
+
+    .single-avto-back {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .single-avto-name {
+      display: flex;
+      column-gap: 15px;
+      align-items: center;
+      font-family: $font-family;
+      font-weight: 500;
+      margin-bottom: 10px;
+
+      h1 {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        font-size: 22px;
+        color: $temnyy-teksty;
+
+        span {
+          display: flex;
+        }
+      }
+
+      p {
+        color: $grey;
+        font-size: 14px;
+      }
+    }
+
+    .single-avto-info {
+      display: flex;
+      column-gap: 40px;
+
+      p {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 14px;
+        color: $temnyy-teksty;
+        line-height: 150%;
+
+        &:nth-of-type(1) {
+          color: $grey;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .avto-tabs {
+    margin-bottom: 15px;
+    font-family: $font-family;
+    font-weight: 500;
+
+    h3 {
+      font-size: 18px;
+      color: $temnyy-teksty;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+
+      li {
+        font-size: 14px;
+        cursor: pointer;
+        color: #dcdcdc;
+      }
+
+      .active-after {
+        color: $temnyy-teksty;
+      }
+
+      .active {
+        color: $zelenyy;
+      }
+    }
+  }
+
+  .single-avto-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .single-avto-card {
+      border: 1px solid $btn-grey;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: $white;
+      font-weight: 500;
+      font-family: $font-family;
+
+      .single-avto-card-head {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        margin-bottom: 15px;
+
+        p {
+          &:nth-of-type(1) {
+            color: $grey;
+            font-size: 12px;
+            margin-bottom: 5px;
+          }
+
+          &:nth-of-type(2) {
+            color: $temnyy-teksty;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .single-avto-card-body {
+        font-family: $font-family;
+        font-weight: 500;
+        margin-bottom: 15px;
+
+        p {
+          color: $grey;
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+
+        .text-container {
+          width: 100%;
+          position: relative;
+        }
+
+        h6 {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          max-width: 100%;
+        }
+
+        .text.expanded {
+          white-space: normal;
+          text-overflow: clip;
+        }
+
+        h6,
+        button {
+          color: $temnyy-teksty;
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+
+        button {
+          outline: 0;
+          border: 0;
+          background-color: transparent;
+          color: $zelenyy;
+          cursor: pointer;
+        }
+      }
+
+      .single-avto-card-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 0;
+          outline: 0;
+          border: 1px solid $btn-grey;
+          border-radius: 5px;
+          cursor: pointer;
+
+          span {
+            display: flex;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .avto {
+    margin-bottom: 90px;
+  }
+
+  .single-avto {
+    margin-bottom: 90px;
+  }
+}
