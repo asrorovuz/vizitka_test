@@ -658,6 +658,14 @@ header nav .navbar-list .navbar-item .navbar-link:hover {
   color: #80877e;
   line-height: 150%;
 }
+.main-sto .main-sto-cards .main-sto-card .main-sto-img {
+  width: 100%;
+}
+.main-sto .main-sto-cards .main-sto-card .main-sto-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .calculator h1 {
   font-size: 22px;

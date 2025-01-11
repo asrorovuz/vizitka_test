@@ -49,6 +49,15 @@
           line-height: 150%;
         }
       }
+
+      .main-sto-img{
+        width: 100%;
+
+        img{
+          width: 100%;
+          object-fit: cover;
+        } 
+      }
     }
   }
 }
